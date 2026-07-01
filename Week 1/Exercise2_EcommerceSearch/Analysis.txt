@@ -1,0 +1,8 @@
+Analysis of Search Algorithms:
+
+1. Time Complexity:
+- Linear Search: O(N). It checks every element one by one. Best case is O(1) if the element is at the first index, worst case is O(N) if it's at the end or not present.
+- Binary Search: O(log N). It divides the array in half each time. Best case O(1), worst case O(log N).
+
+2. Platform Suitability:
+For an E-commerce platform with thousands or millions of products, Binary Search is definitely the better choice for searching items quickly. However, the caveat is that the data must be kept sorted, which can add overhead (O(N log N) for sorting) if products are added or removed frequently.

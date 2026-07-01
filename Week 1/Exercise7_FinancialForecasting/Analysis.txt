@@ -1,0 +1,11 @@
+Analysis of Financial Forecasting Recursive Algorithm:
+
+1. Time Complexity: 
+The time complexity of this simple recursive approach is O(N), where N is the number of years. This is because the function calls itself N times.
+The space complexity is also O(N) due to the call stack depth in memory.
+
+2. Optimization:
+To avoid excessive computation or stack overflow for very large N, we can optimize this.
+- Memoization: Although this particular problem is linear, if there were overlapping subproblems (like Fibonacci), we could use an array or hashmap to store already computed values.
+- Iterative approach: We can just use a simple loop (for loop) instead of recursion, which avoids the O(N) space complexity from the call stack and makes it O(1) space.
+- Mathematical formula: We can just use Math.pow(1 + rate, years) which is computed in O(1) time, making it the most optimal solution.
